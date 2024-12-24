@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { FormData } from '../types';
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8000/api';
+const API_BASE_URL ='https://crop-optimizer-backend.onrender.com/api/';
 
 const api = axios.create({
     baseURL: API_BASE_URL,

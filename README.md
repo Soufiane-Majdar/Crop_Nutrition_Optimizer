@@ -11,6 +11,17 @@ A web application that helps farmers optimize crop nutrition by providing person
 - **PDF Export**: Download recommendations in PDF format
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 
+
+## Demo 
+### link: https://crop-optimizer.onrender.com/
+
+### video 
+
+<video width="600" controls>
+  <source src="./demo.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
 ## Technology Stack
 
 ### Backend
