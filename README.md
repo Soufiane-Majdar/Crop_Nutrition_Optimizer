@@ -4,6 +4,10 @@ A web application for optimizing crop nutrition based on soil type and crop type
 
 ## Setup Instructions
 
+### Backend (Django)
+
+1. First, create the project structure:
+
 ## Backend (Django)
 
 ### Create and activate virtual environment
