@@ -4,7 +4,7 @@
         "pk": "clay",
         "fields": {
             "name": "Clay Soil",
-            "description": "Heavy, dense soil with high nutrient content"
+            "description": "Heavy, dense soil with high nutrient retention"
         }
     },
     {
@@ -16,11 +16,27 @@
         }
     },
     {
+        "model": "api.soiltype",
+        "pk": "loam",
+        "fields": {
+            "name": "Loam Soil",
+            "description": "Ideal soil with balanced properties"
+        }
+    },
+    {
+        "model": "api.soiltype",
+        "pk": "silt",
+        "fields": {
+            "name": "Silty Soil",
+            "description": "Fine-textured soil with good water retention"
+        }
+    },
+    {
         "model": "api.croptype",
         "pk": 1,
         "fields": {
             "name": "Corn",
-            "description": "High-yielding grain crop"
+            "description": "High-yielding grain crop requiring rich soil"
         }
     },
     {
@@ -28,7 +44,157 @@
         "pk": 2,
         "fields": {
             "name": "Wheat",
-            "description": "Common cereal grain"
+            "description": "Adaptable cereal grain for various climates"
+        }
+    },
+    {
+        "model": "api.croptype",
+        "pk": 3,
+        "fields": {
+            "name": "Soybeans",
+            "description": "Nitrogen-fixing legume with high protein content"
+        }
+    },
+    {
+        "model": "api.croptype",
+        "pk": 4,
+        "fields": {
+            "name": "Cotton",
+            "description": "Fiber crop requiring warm climate"
+        }
+    },
+    {
+        "model": "api.croptype",
+        "pk": 5,
+        "fields": {
+            "name": "Rice",
+            "description": "Water-intensive grain crop"
+        }
+    },
+    {
+        "model": "api.yielddata",
+        "pk": 1,
+        "fields": {
+            "soil_type": "clay",
+            "crop_type": 1,
+            "current_yield": 65.0,
+            "potential_yield": 85.0
+        }
+    },
+    {
+        "model": "api.yielddata",
+        "pk": 2,
+        "fields": {
+            "soil_type": "sandy",
+            "crop_type": 1,
+            "current_yield": 55.0,
+            "potential_yield": 75.0
+        }
+    },
+    {
+        "model": "api.yielddata",
+        "pk": 3,
+        "fields": {
+            "soil_type": "loam",
+            "crop_type": 1,
+            "current_yield": 75.0,
+            "potential_yield": 95.0
+        }
+    },
+    {
+        "model": "api.yielddata",
+        "pk": 4,
+        "fields": {
+            "soil_type": "clay",
+            "crop_type": 2,
+            "current_yield": 70.0,
+            "potential_yield": 90.0
+        }
+    },
+    {
+        "model": "api.yielddata",
+        "pk": 5,
+        "fields": {
+            "soil_type": "sandy",
+            "crop_type": 2,
+            "current_yield": 60.0,
+            "potential_yield": 80.0
+        }
+    },
+    {
+        "model": "api.yielddata",
+        "pk": 6,
+        "fields": {
+            "soil_type": "loam",
+            "crop_type": 3,
+            "current_yield": 80.0,
+            "potential_yield": 95.0
+        }
+    },
+    {
+        "model": "api.recommendation",
+        "pk": 1,
+        "fields": {
+            "soil_type": "clay",
+            "crop_type": 1,
+            "product": "Premium NPK Fertilizer",
+            "description": "Balanced nutrition for optimal growth",
+            "dosage": "250 kg/ha"
+        }
+    },
+    {
+        "model": "api.recommendation",
+        "pk": 2,
+        "fields": {
+            "soil_type": "clay",
+            "crop_type": 1,
+            "product": "Micronutrient Mix",
+            "description": "Essential trace elements blend",
+            "dosage": "50 kg/ha"
+        }
+    },
+    {
+        "model": "api.recommendation",
+        "pk": 3,
+        "fields": {
+            "soil_type": "sandy",
+            "crop_type": 1,
+            "product": "Organic Matter Enhancer",
+            "description": "Improves soil structure and water retention",
+            "dosage": "400 kg/ha"
+        }
+    },
+    {
+        "model": "api.recommendation",
+        "pk": 4,
+        "fields": {
+            "soil_type": "clay",
+            "crop_type": 2,
+            "product": "Wheat Booster NPK",
+            "description": "Specialized wheat nutrition formula",
+            "dosage": "200 kg/ha"
+        }
+    },
+    {
+        "model": "api.recommendation",
+        "pk": 5,
+        "fields": {
+            "soil_type": "clay",
+            "crop_type": 2,
+            "product": "Calcium Supplement",
+            "description": "Improves soil structure for wheat growth",
+            "dosage": "150 kg/ha"
+        }
+    },
+    {
+        "model": "api.recommendation",
+        "pk": 6,
+        "fields": {
+            "soil_type": "sandy",
+            "crop_type": 2,
+            "product": "Water Retention Plus",
+            "description": "Enhances moisture retention for sandy soils",
+            "dosage": "300 kg/ha"
         }
     }
 ] 

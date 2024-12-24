@@ -1,27 +1,25 @@
 import React, { createContext, useContext, useState } from 'react';
-import { FormData, SoilType, CropType, Recommendation, YieldData } from '../types';
+import { FormData, Recommendation, YieldData } from '../types';
 
 interface OptimizerContextType {
   formData: FormData;
-  setFormData: (data: FormData) => void;
+  setFormData: React.Dispatch<React.SetStateAction<FormData>>;
   currentStep: number;
-  setCurrentStep: (step: number) => void;
+  setCurrentStep: React.Dispatch<React.SetStateAction<number>>;
   showResults: boolean;
-  setShowResults: (show: boolean) => void;
+  setShowResults: React.Dispatch<React.SetStateAction<boolean>>;
   recommendations: Recommendation[];
-  setRecommendations: (recommendations: Recommendation[]) => void;
+  setRecommendations: React.Dispatch<React.SetStateAction<Recommendation[]>>;
   yieldData: YieldData | null;
-  setYieldData: (data: YieldData | null) => void;
+  setYieldData: React.Dispatch<React.SetStateAction<YieldData | null>>;
 }
 
 const OptimizerContext = createContext<OptimizerContextType | undefined>(undefined);
 
-export const OptimizerProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const OptimizerProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [formData, setFormData] = useState<FormData>({
     soilType: '',
-    cropType: '',
-    targetYield: '',
-    unit: 'tons/acre',
+    cropType: ''
   });
   const [currentStep, setCurrentStep] = useState(0);
   const [showResults, setShowResults] = useState(false);

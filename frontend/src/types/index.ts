@@ -24,6 +24,4 @@ export interface YieldData {
 export interface FormData {
     soilType: string;
     cropType: string;
-    targetYield: string;
-    unit: string;
 } 

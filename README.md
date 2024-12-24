@@ -1,6 +1,32 @@
 # Crop Nutrition Optimizer
 
-A web application for optimizing crop nutrition based on soil type and crop type.
+A web application that helps farmers optimize crop nutrition by providing personalized recommendations based on soil type and crop type. The application uses data-driven insights to suggest fertilizer products and predict potential yield improvements.
+
+## Features
+
+- **Soil Type Selection**: Choose from various soil types with detailed descriptions
+- **Crop Type Selection**: Select from different crop varieties
+- **Smart Recommendations**: Get personalized fertilizer recommendations
+- **Yield Analysis**: View current and potential yield comparisons
+- **PDF Export**: Download recommendations in PDF format
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+
+## Technology Stack
+
+### Backend
+- Django 4.x
+- Django REST Framework
+- SQLite Database
+- Python 3.12+
+
+### Frontend
+- React 18
+- TypeScript
+- Tailwind CSS
+- Framer Motion for animations
+- React PDF for document generation
+
+## Project Structure
 
 ## Setup Instructions
 
