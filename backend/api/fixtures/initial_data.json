@@ -1,0 +1,34 @@
+[
+    {
+        "model": "api.soiltype",
+        "pk": "clay",
+        "fields": {
+            "name": "Clay Soil",
+            "description": "Heavy, dense soil with high nutrient content"
+        }
+    },
+    {
+        "model": "api.soiltype",
+        "pk": "sandy",
+        "fields": {
+            "name": "Sandy Soil",
+            "description": "Light, well-draining soil with low nutrient content"
+        }
+    },
+    {
+        "model": "api.croptype",
+        "pk": 1,
+        "fields": {
+            "name": "Corn",
+            "description": "High-yielding grain crop"
+        }
+    },
+    {
+        "model": "api.croptype",
+        "pk": 2,
+        "fields": {
+            "name": "Wheat",
+            "description": "Common cereal grain"
+        }
+    }
+] 
