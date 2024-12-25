@@ -17,10 +17,7 @@ A web application that helps farmers optimize crop nutrition by providing person
 
 ### video 
 
-<video width="600" controls>
-  <source src="./demo.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+[Watch the Demo Video](https://jumpshare.com/v/JSk9w0uVcUZynjj7G08w)
 
 ## Technology Stack
 
